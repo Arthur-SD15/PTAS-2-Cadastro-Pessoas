@@ -8,17 +8,16 @@
 </head>
 <body>
     <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.nome %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
+        <%= pessoa.id %>
+
+    
         <%= pessoa.sobrenome %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
+
         <%= pessoa.idade %>
-    <% }) %>
-    <% pessoas.forEach((pessoa) => { %>
+
+
         <%= pessoa.altura %>
     <% }) %>
-    <h2 class="button" onclick="location = '/pessoas/criar'">Cancelar</h2>
+    <button><a href="/pessoas/delete"></a>Cancelar</button>
 </body>
 </html>
