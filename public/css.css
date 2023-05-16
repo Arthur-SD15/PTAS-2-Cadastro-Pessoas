@@ -29,19 +29,28 @@ section h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form, label, input{
+form, label, input, .listar{
     display: block;
 }
 
-input{
+input, .listar{
     width: 100%;
     margin-bottom: 2%;
 }
 
-#button{
+#button, .listar{
     padding: 5px;
     background-color: white;
     border-radius: 5px;
     border-bottom: 2px solid zinc;
     margin: 0;
+}
+
+.listar{
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

@@ -33,15 +33,17 @@ app.post('/pessoas/criar', async function(req, res){
   }
 })
 
-app.get('/pessoas/delete', async function(req, res){
+app.get('/pessoas/delete/:id', async function(req, res){
   try {
-      await pessoa.destroy({ where: { id: req.query.id } });
-      res.redirect('/pessoas')
+    //Obtive o id da pessoa que seria excluida
+    const id = req.params.id; 
+    await pessoa.destroy({ where: { id: id } });
+    res.redirect('/pessoas'); 
   } catch (err) {
-      console.error(err);
-      res.status(500).json({ message: 'Usuário deletado.' });
+    console.error(err);
+    res.status(500).json({ message: 'Erro ao deletar usuário.' });
   }
-})
+});
 
 app.listen(3000, function() {
   console.log('App de Exemplo escutando na porta 3000!')
