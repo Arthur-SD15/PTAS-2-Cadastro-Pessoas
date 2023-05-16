@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas do Prazeres</title>
+    <link rel="stylesheet" type="text/css" href="/ejs.css"/>
+    <title>Lista de Cadastrados</title>
 </head>
 <body>
     <% pessoas.forEach((pessoa) => { %>
-        <%= pessoa.id %>
-
-    
-        <%= pessoa.sobrenome %>
-
-        <%= pessoa.idade %>
-
-
-        <%= pessoa.altura %>
+        <div class="card">
+            <h3>ID: <%= pessoa.id %></h3>
+            <p>Sobrenome: <%= pessoa.nome %></p>
+            <p>Sobrenome: <%= pessoa.sobrenome %></p>
+            <p>Idade: <%= pessoa.idade %></p>
+            <p>Altura: <%= pessoa.altura %></p>
+        </div>
     <% }) %>
-    <button><a href="/pessoas/delete"></a>Cancelar</button>
+    <button class="cancel-button"><a href="/pessoas/delete"></a>Cancelar</button>
 </body>
 </html>
