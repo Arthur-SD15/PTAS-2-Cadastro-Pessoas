@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="/ejs.css"/>
     <title>Lista de Cadastrados</title>
 </head>
+<script>
+  function confirmarExclusao(id) {
+    if (confirm("Deseja deletar o usuário, cujo ID é o número " + id + "?")) {
+      window.location.href = "/pessoas/delete/" + id;
+    }
+  }
+</script>
 <body>
     <% pessoas.forEach((pessoa) => { %>
         <div class="card">
@@ -19,12 +26,11 @@
               <p>Altura: <%= pessoa.altura %></p>
             </div>
             <div class="cancel-button">
-              <button class="cancel-button-1"><a href="/pessoas/delete/<%= pessoa.id %>">Cancelar</a></button>
+              <button class="cancel-button-1" onclick="confirmarExclusao('<%= pessoa.id %>')">Excluir</button>
             </div>
           </div>
         </div>
     <% }) %>
     <button class="cancel-button-0"><a href="/pessoas/criar">Voltar</a></button>
-    <button class="cancel-button-1"><a href="/pessoas/delete/all"></a>Cancelar Todos</button>
 </body>
 </html>
