@@ -1,5 +1,5 @@
 <h1 align="center">
-  Projeto Parcial - PTAS 2  
+  Cadastro de Pessoas  
 </h1>
 
 <p align="center">
