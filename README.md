@@ -14,7 +14,7 @@
 
 ## 💻 Projeto
 
-Este repositório contém o trabalho parcial desenvolvido no Instituto Federal Campus Nova Andradina, sob a orientação do Professor Picolo. O trabalho faz parte de um projeto acadêmico e aborda um tema específico relacionado à área de estudo.
+Projeto desenvolvido no Instituto Federal Campus Nova Andradina, como parte da disciplina de Programação e Tecnologias para Aplicações Servidor. O objetivo principal do projeto é criar uma página de cadastro de usuários que permite listar todos os usuários cadastrados e também oferece a funcionalidade de exclusão de usuários. Através desse projeto desenvolvi alguns conceitos relacionados à programação e tecnologias de aplicação servidor.
 
 ## 🧑 Aluno
 
